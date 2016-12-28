@@ -15,6 +15,7 @@ rss:
 
 # Specify the date when the site was setup
 #since: 2015
+since: 2016
 
 # icon between year and author @Footer
 authoricon: heart
@@ -27,8 +28,6 @@ copyright: true
 # Tips: Before you open this tag, remeber set up your URL in hexo _config.yml ( ex. url: http://yourdomain.com )
 canonical: true
 
-# Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -37,12 +36,12 @@ seo: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
-  #about: /about
+  categories: /categories
   archives: /archives
   tags: /tags
   #sitemap: /sitemap.xml
-  #commonweal: /404.html
+  about: /about
+  commonweal: /404.html
 
 
 # Enable/Disable menu icons.
@@ -70,8 +69,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
+#scheme: Muse
+scheme: Mist
 #scheme: Pisces
 
 
@@ -134,7 +133,10 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 #social:
   #LinkLabel: Link
-
+scoial:
+  GitHub: https://github.com/kissingwolf
+  Twitter: https://twitter.com/kissingwolf
+  微博: http://weibo.com/kissingwolf
 
 # Social Links Icons
 # Icon Mapping:
@@ -154,6 +156,7 @@ social_icons:
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
 #avatar:
+avatar: https://avatars0.githubusercontent.com/u/7866894?v=3&u=9eef3eb744c6f9f1767f02c2c490d607be9cc6eb&s=400
 
 
 # Table Of Contents in the Sidebar
@@ -181,8 +184,8 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggler.
-  display: post
-  #display: always
+  #display: post
+  display: always
   #display: hide
   #display: remove
 
@@ -193,6 +196,11 @@ sidebar:
 #links_layout: inline
 #links:
   #Title: http://example.com/
+links_title: Links
+links:
+  Shell's Home: http://shell909090.org/
+  BoobooWei Blog: https://booboowei.github.io/
+  尚观科技: http://www.uplooking.com/
 
 
 # ---------------------------------------------------------------
@@ -213,7 +221,6 @@ auto_excerpt:
 
 # Post meta display settings
 post_meta:
-  item_text: true
   created_at: true
   updated_at: false
   categories: true
@@ -273,9 +280,6 @@ mathjax:
 
 # Hypercomments
 #hypercomments_id:
-
-# Gentie productKey
-#gentie_productKey:
 
 # Baidu Share
 # Available value:
@@ -466,3 +470,4 @@ images: images
 
 # Theme version
 version: 5.1.0
+
